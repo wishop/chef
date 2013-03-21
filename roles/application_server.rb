@@ -10,7 +10,7 @@ run_list(all_env)
 
 override_attributes({
 
-  #'java' => {
+  'java' => {
   #	'oracle' => {
   #		"accept_oracle_download_terms" => true
   #	},
