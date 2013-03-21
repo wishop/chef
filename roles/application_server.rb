@@ -9,8 +9,12 @@ all_env = [
 run_list(all_env)
 
 override_attributes({
+
   'java' => {
-	'jdk_version' => '7'
+	'oracle' => {
+		"accept_oracle_download_terms" => true
+	},
+	'jdk_version' => '7',
 	'install_flavor' => 'oracle'
   }
 })
