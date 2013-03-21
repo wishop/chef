@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+ # base role cookbooks
+ cookbook 'chef-solo-search'
+ cookbook 'users'
+ cookbook 'sudo'
+ cookbook 'apt'
+ cookbook 'vim'
+ cookbook 'build-essential'
+
+ # web role cookbooks
+ cookbook 'apache2', '>= 1.0.0'
+
+ # dev environment role cookbooks 
+ cookbook 'git', '>=2.2.0'
+ cookbook 'maven'
+
+ #app role cookbooks
+ cookbook 'java'
+ cookbook 'jboss'
+
+ # db role cookbooks
+ cookbook 'postgresql',
+   :git => 'https://github.com/findsyou/cookbooks',
+   :ref => 'postgresql-improvements'

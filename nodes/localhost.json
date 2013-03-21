@@ -1,0 +1,6 @@
+{"run_list":[
+	"role[web_server]",
+	"role[application_server]",
+	"role[database_server]",
+	"role[dev_environment]"
+]}
